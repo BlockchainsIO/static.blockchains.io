@@ -1,0 +1,9 @@
+The static content for Blockchains.io
+
+ALL Files (including those that 404) are far-future cached, so should be versioned for cache-busting
+
+404's are returned as:
+image files: a questionmark image
+js files: text file with a single space in it
+css files: text file with a single space in it
+All others: A 404 holding page that redirects to https://blockchains.io/ after 5 seconds

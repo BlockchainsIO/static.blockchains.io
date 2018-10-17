@@ -1,0 +1,19 @@
+RewriteEngine off
+FileETag None
+Header unset ETag
+Header unset Last-Modified
+Header unset X-Powered-By
+
+ExpiresActive On
+ExpiresDefault "access plus 1 years"
+
+<FilesMatch ".(jpg|png|gif)$">
+  ErrorDocument 404 "/404.png
+</FilesMatch>
+<FilesMatch ".js$">
+  ErrorDocument 404 "/404.png
+</FilesMatch>
+<FilesMatch ".css$">
+  ErrorDocument 404 "/404.png
+</FilesMatch>
+ErrorDocument 404 /404.html
