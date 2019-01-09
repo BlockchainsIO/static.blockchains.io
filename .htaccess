@@ -17,3 +17,5 @@ ExpiresDefault "access plus 1 years"
   ErrorDocument 404 "/404.css
 </FilesMatch>
 ErrorDocument 404 /404.html
+ErrorDocument 401 /index.html
+ErrorDocument 403 /index.html
